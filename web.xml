@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="WebApp_9" version="2.4" 
+xmlns="http://java.sun.com/xml/ns/j2ee" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee 
+http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+
+<servlet>
+<servlet-name>FetchItemsController</servlet-name>
+<servlet-class>cart.FetchItemsServlet</servlet-class>
+</servlet>
+
+<servlet>
+<servlet-name>AddItemsController</servlet-name>
+<servlet-class>cart.AddItemsServlet</servlet-class>
+</servlet>
+
+<servlet>
+<servlet-name>DecisionController</servlet-name>
+<servlet-class>cart.DecisionServlet</servlet-class>
+</servlet>
+<!-- Standard ACtion Servlet Mapping -->
+
+<servlet-mapping>
+<servlet-name>FetchItemsController</servlet-name>
+<url-pattern>/fetchItems</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+<servlet-name>AddItemsController</servlet-name>
+<url-pattern>/addItems</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+<servlet-name>DecisionController</servlet-name>
+<url-pattern>/decision</url-pattern>
+</servlet-mapping>
+
+<!--The usual Welcome File List-->
+<welcome-file-list>
+<welcome-file>Index.html</welcome-file>
+</welcome-file-list>
+
+</web-app>
